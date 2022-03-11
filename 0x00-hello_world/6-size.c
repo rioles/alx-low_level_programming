@@ -7,10 +7,14 @@
  */
 int main(void)
 {
-	printf("Size of a char:%c byte(s)\n", sizeof(char));
-	printf("Size of an int:%i byte(s)\n", sizeof(int));
+	int intType;
+    	float floatType;
+    	char charType;
+	double doubleType;
+	printf("Size of a char:%zu byte(s)\n", sizeof(charType));
+	printf("Size of an int:%zu byte(s)\n", sizeof(intType));
         printf("Size of a long int:%li byte(s)\n", sizeof(long));
-        printf("Size of a long long int:%ld byte(s)\n", sizeof(long));
-        printf("Size of a float:%f byte(s)\n", sizeof(float));
+        printf("Size of a long long int:%ld byte(s)\n", sizeof(doubleType));
+        printf("Size of a float:%zu byte(s)\n", sizeof(floatType));
 	return (0);
 }
