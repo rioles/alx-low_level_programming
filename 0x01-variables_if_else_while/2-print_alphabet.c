@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -7,10 +7,8 @@
  */
 int main(void)
 {
-	int n;
-	int lastDigit;
 
-	for (int alphabetNumeric = 'a'; a <= 'z'; alphabetNumeric++)
+	for (int alphabetNumeric = 'a'; alphabetNumeric <= 'z'; alphabetNumeric++)
 	{
 		putchar(alphabetNumeric);
 	}
