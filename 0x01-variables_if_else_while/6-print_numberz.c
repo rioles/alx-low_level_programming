@@ -11,7 +11,7 @@ int main(void)
 
 	for (x = 10; x <= 19; x++)
 	{
-		printf(x % 10 + '0');
+		putchar(x % 10 + '0');
 	}
 	putchar(10);
 	return (0);
