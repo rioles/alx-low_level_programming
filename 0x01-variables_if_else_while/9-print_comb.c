@@ -12,6 +12,10 @@ int main(void)
 	for (x = 10; x <= 19; x++)
 	{
 		putchar(x % 10 + '0');
+		if (x == 19)
+		{
+			continue;
+		}
 		putchar(44);
 		putchar(32);
 	}
