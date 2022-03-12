@@ -8,9 +8,9 @@
 int main(void)
 {
 
-	for (int alphabetNumeric = 'a'; alphabetNumeric <= 'z'; alphabetNumeric++)
+	for (int x = 'a'; x <= 'z'; x++)
 	{
-		putchar(alphabetNumeric);
+		putchar(x);
 	}
 	printf("\n");
 	return (0);
