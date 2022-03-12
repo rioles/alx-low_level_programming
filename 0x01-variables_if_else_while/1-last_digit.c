@@ -39,15 +39,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	lastDigit = n % 10;
 
-	if (n < 0)
-	{
-		lastDigit *= -1;
-		lastDigitGreaterOrLess(lastDigit, n);
-	}
-	else
-	{
-		lastDigitGreaterOrLess(lastDigit, n);
-	}
+	lastDigitGreaterOrLess(lastDigit, n);
 	/* your code goes there */
 	return (0);
 }
