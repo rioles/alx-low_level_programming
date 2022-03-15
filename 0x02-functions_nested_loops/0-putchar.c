@@ -1,5 +1,18 @@
 #include <stdio.h>
+#include "main.h"
 
+/**
+ * putChar - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
+void putChar(void)
+{
+	char myString[100] = "_putchar";
+
+	printf("%s\n", myString);
+}
 /**
  * main - Entry point
  *
@@ -7,7 +20,6 @@
  */
 int main(void)
 {
-        printf("_putchar");
-        putchar(10);
-        return (0);
+	putChar();
+	return (0);
 }
