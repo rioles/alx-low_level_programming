@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "header.h"
+#include "main.h"
 
 /**
  * print_alphabet - Print alphabet
@@ -15,14 +15,4 @@ void print_alphabet(void)
 		putchar(i);
 	}
 	putchar(10);
-}
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	print_alphabet();
-	return (0);
 }
