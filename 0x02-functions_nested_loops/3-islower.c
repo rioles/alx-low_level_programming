@@ -3,19 +3,19 @@
 #include <ctype.h>
 
 /**
- * print_alphabet - Print alphabet
+ * _islower - Check if character is lower
  *
- * Return: Always 0 (Success)
+ * @value: The character to check
+ * Return: 1 if lowercase 0 otherwise(Success)
  */
- int _islower(int value)
- {
- 	if (islower(value))
- 	{
- 		return 1;
- 	}
- 	else
- 	{
- 		return 0;
-
- 	}
- }
+int _islower(int value)
+{
+	if (islower(value))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
