@@ -10,11 +10,11 @@
  *
  * Return: 1 if lowercase 0 otherwise(Success)
  */
-int print_sign(int n)
+int _abs(int n)
 {
 	if (n < 0)
 	{
-		n * = -1;
+		n  = n * -1;
 		return (n);
 	}
 	else if (n > 0)
