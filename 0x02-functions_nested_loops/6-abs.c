@@ -3,7 +3,7 @@
 
 
 /**
- * print_sign - Check if number is less or gretter than 0
+ * _abs - Check if number is less or gretter than 0
  * and check the number's sign
  *
  * @n: The number to check
