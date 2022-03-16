@@ -9,7 +9,7 @@
  *@n: number
  * Return: 1 if lowercase 0 otherwise(Success)
  */
-int  print_to_98(int n)
+void  print_to_98(int n)
 {
 	if (n <= 98)
 	{
