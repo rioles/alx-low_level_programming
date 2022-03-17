@@ -29,3 +29,13 @@ void prin_buzz_fizz(void)
 	}
 	printf("\n");
 }
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	prin_buzz_fizz();
+	return (0);
+}
