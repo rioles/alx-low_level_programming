@@ -13,13 +13,12 @@ void print_triangle(int n)
 	for (i = 0; i < n; i++)
 	{
 		int j;
+		int k;
 
 		for (j = 1; j < n - i; j++)
 		{
 			printf(" ");
 		}
-		int k;
-
 		for (k = 0; k <= 2 * i - i; k++)
 		{
 			printf("#");
