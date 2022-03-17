@@ -2,40 +2,32 @@
 #include "main.h"
 
 /**
- *prin_buzz_fizz - print_fizz buzz
- */
-void prin_buzz_fizz(void)
+* main - print Fizz or Buzz if multiple for 3 or 5
+* Return: return always 0 if success
+*/
+int main(void)
 {
 	int i;
 
-	for (i = 1; i <= 100; i++)
+	for (i = 1; i <= 99; i++)
 	{
 		if (i % 15 == 0)
 		{
 			printf("FizzBuzz ");
 		}
-		else if (i % 5 == 0)
-		{
-			printf("Buzz ");
-		}
 		else if (i % 3 == 0)
 		{
 			printf("Fizz ");
 		}
+		else if (i % 5 == 0)
+		{
+			printf("Buzz ");
+		}
 		else
 		{
-			printf("%d ", i);
+			printf("%i ", i);
 		}
 	}
-	printf("\n");
-}
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	prin_buzz_fizz();
+	printf("Buzz\n");
 	return (0);
 }
