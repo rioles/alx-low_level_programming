@@ -23,7 +23,7 @@ void more_numbers(void)
 {
 	int time_to_print_number;
 
-	for (time_to_print_number = 0; time_to_print_number < 11;
+	for (time_to_print_number = 0; time_to_print_number < 10;
 			time_to_print_number++)
 	{
 		print_number_from_zero_to_forteen();
