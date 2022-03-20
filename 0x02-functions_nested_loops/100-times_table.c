@@ -3,7 +3,7 @@
 
 
 /**
- * print_time_table - Check if number is less or gretter than 0
+ * print_times_table - print the times table
  * and check the number's sign
  *
  * @n: integer for which the times table will be printed
