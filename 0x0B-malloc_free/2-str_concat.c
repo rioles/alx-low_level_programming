@@ -11,6 +11,9 @@ unsigned int return_size_for(char *string)
 {
 	unsigned int  i = 0, string_length = 0;
 
+	if (string == NULL)
+		return 0;
+
 	while (*(string + i) != '\0')
 	{
 		string_length++;
@@ -40,7 +43,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	array = malloc((return_size_for(s1) + return_size_for(s2)) * sizeof(char));
+	array = malloc((return_size_for(s1) + return_size_for(s2)) * sizeof(char)+1);
 	length_s1 = return_size_for(s1);
 	if (array == NULL)
 		return (NULL);
