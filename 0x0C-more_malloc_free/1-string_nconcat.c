@@ -1,22 +1,25 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- * _strlen - return string size
- * @string: string given
- * Return: size for string
+ * _strlen- counts number of characters in string
+ * @s: string to be counted
+ *
+ * Description: loop to count number of characters in string
+ * that is lcated by a pointer
+ *
+ * Return: number of characters in string
  */
-unsigned int _strlen(char *string)
-{
-	unsigned int i = 0;
-	unsigned int string_length = 0;
 
-	while (string[i] != '\0')
-	{
-		i++;
-		string++;
-	}
-	return (string_length);
+int _strlen(char *s)
+{
+	int numofchar;
+
+	for (numofchar = 0; *s != '\0'; s++)
+		numofchar++;
+
+	return (numofchar);
 }
 
 /**
@@ -35,34 +38,34 @@ unsigned int _strlen(char *string)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *concatern;
-	unsigned int k, i, length_s1;
+	unsigned int len_s1, i = 0, i2 = 0;
+	char *concat;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	length_s1 = _strlen(s1);
-	concatern = malloc((length_s1 + n + 1) * sizeof(char));
 
-	if (concatern == NULL)
-	{
+	len_s1 = _strlen(s1);
+	concat = malloc(sizeof(char) * (len_s1 + n + 1));
+
+	if (concat == NULL)
 		return (NULL);
-	}
-	i = 0;
-	while (*(s1 + i) != '\0')
+
+
+	while (s1[i] != '\0')
 	{
-		*(concatern + i) = *(s1 + i);
-		i++;
+		concat[i] = s1[i];
+		i = i + 1;
 	}
 
-	k = 0;
-	while (*(s2 + k) != '\0' && k < n)
+	while (s2[i2] != '\0' && i2 < n)
 	{
-		*(concatern + i) = *(s2 + k);
-		i++;
-		k++;
+		concat[i] = s2[i2];
+		i = i + 1;
+		i2 = i2 + 1;
 	}
-	*(concatern + i) = '\0';
-	return (concatern);
+	concat[i] = '\0';
+
+	return (concat);
 }
