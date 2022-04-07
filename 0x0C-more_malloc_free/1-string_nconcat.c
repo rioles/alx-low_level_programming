@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * return_size_for - return string size
+ * _strlen - return string size
  * @string: string given
  * Return: size for string
  */
@@ -60,8 +60,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (*(s2 + k) != '\0' && k < n)
 	{
 		*(concatern + i) = *(s2 + k);
-		k++;
 		i++;
+		k++;
 	}
 	*(concatern + i) = '\0';
 	return (concatern);
