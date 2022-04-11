@@ -23,7 +23,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (doggy == NULL)
 		return (NULL);
 
-	doggy->name = malloc(nlen * sizeof(doggy->name));
+	doggy->name = malloc(nlen * sizeof(doggy->name) + 1);
 	if (doggy == NULL)
 		return (NULL);
 	for (i = 0; i < nlen; i++)
@@ -31,7 +31,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	doggy->age = age;
 
-	doggy->owner = malloc(olen * sizeof(doggy->owner));
+	doggy->owner = malloc(olen * sizeof(doggy->owner) + 1);
 	if (doggy == NULL)
 		return (NULL);
 	for (i = 0; i < olen; i++)
