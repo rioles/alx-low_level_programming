@@ -6,11 +6,11 @@
  *
  * Description: singly linked list node structure
  * for Holberton project
- * All files in this project use this format 
+ * All files in this project use this format
  */
 typedef struct list_s
 {
-    char *str;
-    unsigned int len;
-    struct list_s *next;
+	char *str;
+	unsigned int len;
+	struct list_s *next;
 } list_t;
